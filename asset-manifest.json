@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/attenreact/static/css/main.bdf3ca79.css",
+    "main.js": "/attenreact/static/js/main.1416822a.js",
+    "static/media/students.svg": "/attenreact/static/media/students.9404f2f89ab8934e529d47fe3e48f9f1.svg",
+    "static/media/subjects.svg": "/attenreact/static/media/subjects.013b9ea5daf1ce262cdf1faf054c2b50.svg",
+    "static/media/assignment.svg": "/attenreact/static/media/assignment.bc61fe3453a587ff7d3028a4494ad169.svg",
+    "static/media/classroom.png": "/attenreact/static/media/classroom.f472ff2cd754d14669f3.png",
+    "static/media/time.svg": "/attenreact/static/media/time.4385c93898939eb79375d3cdc30644aa.svg",
+    "static/media/designlogin.jpg": "/attenreact/static/media/designlogin.3cac939f195a9e698ba4.jpg",
+    "index.html": "/attenreact/index.html",
+    "main.bdf3ca79.css.map": "/attenreact/static/css/main.bdf3ca79.css.map",
+    "main.1416822a.js.map": "/attenreact/static/js/main.1416822a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdf3ca79.css",
+    "static/js/main.1416822a.js"
+  ]
+}
