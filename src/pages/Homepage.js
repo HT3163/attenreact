@@ -7,6 +7,7 @@ import { LightPurpleButton } from '../components/buttonStyles';
 
 const Homepage = () => {
     return (
+        
         <StyledContainer>
             <Grid container spacing={0}>
                 <Grid item xs={12} md={6}>
@@ -14,7 +15,8 @@ const Homepage = () => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <StyledPaper elevation={3}>
-                        <StyledTitle>
+                    <h1 id='hamza'>Hello World</h1>
+                        <StyledTitle id='welcomeid'>
                             Welcome to
                             <br />
                             School Management
@@ -27,11 +29,16 @@ const Homepage = () => {
                             Access records, view marks, and communicate effortlessly.
                         </StyledText>
                         <StyledBox>
+
                             <StyledLink to="/choose">
-                                <LightPurpleButton variant="contained" fullWidth>
+                                <LightPurpleButton id='btn1' variant="contained" fullWidth>
                                     Login
                                 </LightPurpleButton>
                             </StyledLink>
+
+                            <a href='/choose' id='btnlogin'>Login Page</a>
+
+
                             <StyledLink to="/chooseasguest">
                                 <Button variant="outlined" fullWidth
                                     sx={{ mt: 2, mb: 3, color: "#7f56da", borderColor: "#7f56da" }}

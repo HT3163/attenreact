@@ -87,7 +87,8 @@ const ChooseUser = ({ visitor }) => {
       <Container>
         <Grid container spacing={2} justifyContent="center">
           <Grid item xs={12} sm={6} md={4}>
-            <div onClick={() => navigateHandler("Admin")}>
+
+            <div onClick={() => navigateHandler("Admin")} btn='admin'>
               <StyledPaper elevation={3}>
                 <Box mb={2}>
                   <AccountCircle fontSize="large" />
@@ -98,10 +99,14 @@ const ChooseUser = ({ visitor }) => {
                 Login as an administrator to access the dashboard to manage app data.
               </StyledPaper>
             </div>
+
+        
+
+
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <StyledPaper elevation={3}>
-              <div onClick={() => navigateHandler("Student")}>
+              <div onClick={() => navigateHandler("Student")} id='student'>
                 <Box mb={2}>
                   <School fontSize="large" />
                 </Box>
@@ -114,7 +119,8 @@ const ChooseUser = ({ visitor }) => {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <StyledPaper elevation={3}>
-              <div onClick={() => navigateHandler("Teacher")}>
+
+              <div onClick={() => navigateHandler("Teacher")} btn='teacher'>
                 <Box mb={2}>
                   <Group fontSize="large" />
                 </Box>
@@ -123,6 +129,15 @@ const ChooseUser = ({ visitor }) => {
                 </StyledTypography>
                 Login as a teacher to create courses, assignments, and track student progress.
               </div>
+    
+
+
+            </StyledPaper>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <StyledPaper elevation={3}>
+
+            <a href='/Teacherlogin' id='btnteacher'>Teacher Page</a>
             </StyledPaper>
           </Grid>
         </Grid>
