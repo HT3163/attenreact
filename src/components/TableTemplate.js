@@ -15,6 +15,7 @@ const TableTemplate = ({ buttonHaver: ButtonHaver, columns, rows }) => {
     const [showPopup, setShowPopup] = useState(false);
     const [message, setMessage] = useState("");
 
+    
     const handleChange = (event) => {
         setSelectedValue(event.target.value); // Update state with selected value
     };
@@ -39,6 +40,7 @@ const TableTemplate = ({ buttonHaver: ButtonHaver, columns, rows }) => {
     const obj = {}
 
     const handleStatusChange = (studentId, newStatus) => {
+        console.log('me clicked')
         obj[studentId?.id] = newStatus
     };
 
@@ -121,8 +123,8 @@ const TableTemplate = ({ buttonHaver: ButtonHaver, columns, rows }) => {
 
                                         
                                         {currentUser?.role === 'Teacher' ? <div>
-                                            <input name={row?.rollNum} type='radio' value="Present" onChange={() => handleStatusChange(row, 'Present')}/>Present
-                                            <input name={row?.rollNum} type='radio'value="Absent" onChange={() => handleStatusChange(row, 'Absent')}/>Absent
+                                            <input name={row?.rollNum} type='radio' value="Present" onClick={() => handleStatusChange(row, 'Present')}/>Present
+                                            <input name={row?.rollNum} type='radio'value="Absent" onClick={() => handleStatusChange(row, 'Absent')}/>Absent
                                             </div> : ""
                                         }
                                       
@@ -183,11 +185,21 @@ const TableTemplate = ({ buttonHaver: ButtonHaver, columns, rows }) => {
             {
                 currentUser?.role === "Teacher" ? <>
                     <div style={{ display: 'flex', justifyContent: 'center',margin:"10px"}}>
-                        <Button onClick={()=> uploadAttendance()} variant="contained" color="primary">
+                        <Button id='btnclick' onClick={()=> uploadAttendance()} variant="contained" color="primary">
                             Submit Attendance
                         </Button>
                         <Popup message={message} setShowPopup={setShowPopup} showPopup={showPopup} />
+                    </div>
+                </> : ""
+            }
 
+{
+                currentUser?.role === "Teacher" ? <>
+                    <div style={{ display: 'flex', justifyContent: 'center',margin:"10px"}}>
+                        <button id='btnclick1' onClick={()=> uploadAttendance()}>
+                            Submit Attendance
+                        </button>
+                        <Popup message={message} setShowPopup={setShowPopup} showPopup={showPopup} />
                     </div>
                 </> : ""
             }
