@@ -119,6 +119,14 @@ const TableTemplate = ({ buttonHaver: ButtonHaver, columns, rows }) => {
                                         })}
                                         {/* {console.log(row)} */}
 
+                                        
+
+                                        <div>
+                                            <input name={row?.rollNum} type='radio' value="Present" onChange={() => handleStatusChange(row, 'Present')}/>Present
+                                            <input name={row?.rollNum} type='radio'value="Absent" onChange={() => handleStatusChange(row, 'Absent')}/>Absent
+                                        </div>
+
+
                                         {
                                             currentUser?.role === 'Teacher' ? <>
                                                 <StyledTableCell align="center">
