@@ -120,7 +120,7 @@ const ChooseUser = ({ visitor }) => {
           <Grid item xs={12} sm={6} md={4}>
             <StyledPaper elevation={3}>
 
-              <div onClick={() => navigateHandler("Teacher")} btn='teacher'>
+              <div onClick={() => navigateHandler("Teacher")} id='teacher'>
                 <Box mb={2}>
                   <Group fontSize="large" />
                 </Box>
