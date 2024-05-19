@@ -120,14 +120,15 @@ const TableTemplate = ({ buttonHaver: ButtonHaver, columns, rows }) => {
                                         {/* {console.log(row)} */}
 
                                         
-
-                                        <div>
+                                        {currentUser?.role === 'Teacher' ? <div>
                                             <input name={row?.rollNum} type='radio' value="Present" onChange={() => handleStatusChange(row, 'Present')}/>Present
                                             <input name={row?.rollNum} type='radio'value="Absent" onChange={() => handleStatusChange(row, 'Absent')}/>Absent
-                                        </div>
+                                            </div> : ""
+                                        }
+                                      
 
 
-                                        {
+                                        {/* {
                                             currentUser?.role === 'Teacher' ? <>
                                                 <StyledTableCell align="center">
                                                     <RadioGroup>
@@ -156,7 +157,8 @@ const TableTemplate = ({ buttonHaver: ButtonHaver, columns, rows }) => {
 
                                                 </StyledTableCell>
                                             </> : ""
-                                        }
+                                        } */}
+
                                         {
                                             currentUser?.role === 'Admin' ? <>
                                                 <StyledTableCell align="center">
