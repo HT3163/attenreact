@@ -224,6 +224,7 @@ const LoginPage = ({ role }) => {
                             </Grid>
                             <LightPurpleButton
                                 type="submit"
+                                id='btn-login'
                                 fullWidth
                                 variant="contained"
                                 sx={{ mt: 3 }}

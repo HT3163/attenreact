@@ -134,12 +134,12 @@ const ChooseUser = ({ visitor }) => {
 
             </StyledPaper>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          {/* <Grid item xs={12} sm={6} md={4}>
             <StyledPaper elevation={3}>
 
             <a href='/Teacherlogin' id='btnteacher'>Teacher Page</a>
             </StyledPaper>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
       <Backdrop

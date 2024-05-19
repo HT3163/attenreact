@@ -30,13 +30,13 @@ const Homepage = () => {
                         </StyledText>
                         <StyledBox>
 
-                            <StyledLink to="/choose">
-                                <LightPurpleButton id='btn1' variant="contained" fullWidth>
+                            <StyledLink to="/choose" id='btn1'>
+                                <LightPurpleButton variant="contained" fullWidth>
                                     Login
                                 </LightPurpleButton>
                             </StyledLink>
 
-                            <a href='/choose' id='btnlogin'>Login Page</a>
+                            {/* <a href='/choose' id='btnlogin'>Login Page</a> */}
 
 
                             <StyledLink to="/chooseasguest">

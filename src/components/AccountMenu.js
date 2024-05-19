@@ -28,6 +28,7 @@ const AccountMenu = () => {
                         aria-controls={open ? 'account-menu' : undefined}
                         aria-haspopup="true"
                         aria-expanded={open ? 'true' : undefined}
+                        id='btnprofile'
                     >
                         <Avatar sx={{ width: 32, height: 32 }}>
                             {String(currentUser.name).charAt(0)}
@@ -65,10 +66,16 @@ const AccountMenu = () => {
                     <ListItemIcon>
                         <Logout fontSize="small" />
                     </ListItemIcon>
-                    <Link to="/logout">
+                    <Link to="/logout" id='linklogout'>
                         Logout
                     </Link>
                 </MenuItem>
+                {/* <MenuItem>
+                    <ListItemIcon>
+                        <Logout fontSize="small" />
+                    </ListItemIcon>
+                    <a href='/logout' id='alogout'>logout page</a>
+                </MenuItem> */}
             </Menu>
         </>
     );

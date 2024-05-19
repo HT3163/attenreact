@@ -192,7 +192,7 @@ const TableTemplate = ({ buttonHaver: ButtonHaver, columns, rows }) => {
                     </div>
                 </> : ""
             }
-
+{/* 
 {
                 currentUser?.role === "Teacher" ? <>
                     <div style={{ display: 'flex', justifyContent: 'center',margin:"10px"}}>
@@ -202,7 +202,7 @@ const TableTemplate = ({ buttonHaver: ButtonHaver, columns, rows }) => {
                         <Popup message={message} setShowPopup={setShowPopup} showPopup={showPopup} />
                     </div>
                 </> : ""
-            }
+            } */}
 
 
 
